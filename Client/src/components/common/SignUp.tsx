@@ -56,6 +56,7 @@ function SignUp() {
               Event <span className=" text-[#7848F4]">Hive</span>
             </h2>
             <h1 className=" text-2xl">Sign Up to Event Hive</h1>
+            
           </div>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
