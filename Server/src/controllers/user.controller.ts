@@ -1,5 +1,5 @@
 import { Request, Response, Router } from "express";
-import { getUser } from "../../utils/user.utils";
+import { getUser } from "../utils/user.utils";
 import { sendResponse } from "../config/response";
 import bcrypt from "bcryptjs";
 import { prisma_client } from "../config/prismaClient";

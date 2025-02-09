@@ -1,4 +1,4 @@
-import { prisma_client } from "../src/config/prismaClient";
+import { prisma_client } from "../config/prismaClient";
 
 export const getUser = async (data: { id?: string; email?: string }) => {
   if (!data.email && !data.id) {
