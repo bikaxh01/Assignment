@@ -4,13 +4,16 @@ import FilterComponent from "@/components/common/FilterComponent";
 import HeroSection from "@/components/common/HeroSection";
 import NavBar from "@/components/common/NavBar";
 import { useQuery } from "@tanstack/react-query";
-import { useStore } from "../../../store/user.store";
+import { useStore } from "../../store/user.store";
 import { useEffect } from "react";
 import { getUserData } from "@/apis/user.api";
 function EventPage() {
+
+  //@ts-ignore
   const addUser = useStore((state) => state.addUser);
 
 
+  
 
   useEffect(() => {
     const fetchUser = async () => {

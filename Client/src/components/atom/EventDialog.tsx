@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
-import { useStore } from "../../../store/user.store";
+import { useStore } from "../../store/user.store";
 import { useNavigate } from "react-router";
 
 function EventDialog({ eventData }: { eventData: Record<string, string> }) {
   const [image, setImage] = useState(eventData.imageUrl);
   const navigate = useNavigate();
-  const user = useStore((state) => state.user);
+  const user = useStore((state:any) => state.user);
 
   if (!user) {
     navigate("sign-in");

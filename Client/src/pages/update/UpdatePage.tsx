@@ -68,7 +68,7 @@ const UpdatePage = () => {
       toast.success(data.message);
       queryClient.invalidateQueries({ queryKey: ["events"] });
       form.reset();
-      setOpen(false);
+  
     },
     onError: (data) => {
       toast.error(data.message);

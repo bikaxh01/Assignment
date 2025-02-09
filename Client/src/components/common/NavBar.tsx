@@ -1,9 +1,9 @@
 import CreateEventDialog from "../atom/CreateEventDialog";
 import { Link } from "react-router";
-import { useStore } from "../../../store/user.store";
+import { useStore } from "../../store/user.store";
 
 function NavBar() {
-  const user = useStore((state) => state.user);
+  const user = useStore((state:any) => state.user);
 
   return (
     <div className="  flex justify-between  p-1 items-center">

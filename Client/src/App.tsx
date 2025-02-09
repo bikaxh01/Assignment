@@ -1,4 +1,4 @@
-import SignUp from "./components/common/SignUp";
+
 import { Routes, Route } from "react-router";
 import EventPage from "./pages/events/EventPage";
 import SignInPage from "./pages/siginIn/SignInPage";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import EventDialog from "./EventDialog";
-function EventCard({ eventData }: { eventData: Record<string, string> }) {
+function EventCard({ eventData }: { eventData: any }) {
   console.log("🚀 ~ EventCard ~ eventData:", eventData);
   return (
     <Dialog>

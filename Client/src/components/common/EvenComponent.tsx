@@ -6,7 +6,7 @@ function EvenComponent({
   data,
   isLoading,
 }: {
-  data: EventInterface[];
+  data: any;
   isLoading: boolean;
 }) {
  
