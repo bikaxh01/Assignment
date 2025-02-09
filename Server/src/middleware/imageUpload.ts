@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { upload } from "../../config/cloudinary";
-import { sendResponse } from "../../config/response";
+import { upload } from "../config/cloudinary";
+import { sendResponse } from "../config/response";
 
 export const uploadImage = (
   req: Request,

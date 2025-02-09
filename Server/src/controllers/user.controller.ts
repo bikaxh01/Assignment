@@ -1,8 +1,8 @@
 import { Request, Response, Router } from "express";
 import { getUser } from "../../utils/user.utils";
-import { sendResponse } from "../../config/response";
+import { sendResponse } from "../config/response";
 import bcrypt from "bcryptjs";
-import { prisma_client } from "../../config/prismaClient";
+import { prisma_client } from "../config/prismaClient";
 import { USER_TYPE } from "@prisma/client";
 import jwt from "jsonwebtoken";
 import { config } from "dotenv";

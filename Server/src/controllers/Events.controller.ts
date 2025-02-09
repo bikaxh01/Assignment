@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import { prisma_client } from "../../config/prismaClient";
-import { sendResponse } from "../../config/response";
+import { prisma_client } from "../config/prismaClient";
+import { sendResponse } from "../config/response";
 import {
   CreateEventInterface,
   updateEventInterface,
-} from "../../types/Event.types";
+} from "../types/Event.types";
 
 export const createEvent = async (req: Request, res: Response) => {
   try {

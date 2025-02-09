@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from "express";
-import { sendResponse } from "../../config/response";
+import { sendResponse } from "../config/response";
 import jwt from "jsonwebtoken";
 import { config } from "dotenv";
-import { prisma_client } from "../../config/prismaClient";
+import { prisma_client } from "../config/prismaClient";
 config();
 export const protectedRoute = async (
   req: Request,
